@@ -29,3 +29,25 @@ z = str(3)
 print(x, y, z)
 print(type(x))
 
+# 4. Solicitud de datos
+
+a = input("Introduce cualquier dato: ")
+b = int(input("Introduce un número entero: "))
+c = float(input("Introduce un número decimal: "))
+
+print(a, b, c)
+
+# Boolean, comparación y lógicos 
+# comparación:
+print(10 > 9)
+print(10 < 9)
+print(10 == 9)
+print(10 >= 9)
+print(10 <= 9)
+print(10 != 9)
+
+# lógicos:
+x = 1
+print(x < 5 and x < 10)
+print(x < 5 or x < 10)
+print(not(x < 5 and x < 10))
