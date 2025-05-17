@@ -6,3 +6,7 @@
     de múltiples
     líneas
 """
+
+# 2. Strings
+print("Hola soy una cadena 🦍")
+print("yo soy otra cadena")
