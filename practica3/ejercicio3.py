@@ -9,14 +9,20 @@ def es_palindromo(texto):
     else:
         return False
 
-try:
-    # Formateamos el texto, quitamos los espacios y bajamos todo a minusculas
-    texto = input("Ingresa un texto: ").replace(" ", "").lower()
-    if (es_palindromo(texto)):
-        print("Es palíndromo")
-    else:
-        print("NO es palíndromo")
+while True:
+    try:
+        # Formateamos el texto, quitamos los espacios y bajamos todo a minusculas
+        texto = input("Ingresa un texto: ").replace(" ", "").lower()
+        if (es_palindromo(texto)):
+            print("Es palíndromo")
+        else:
+            print("NO es palíndromo")
 
-# Lanzamos el error si lo que se ingresó no es un número
-except ValueError as e:
-    print(f"Error: {e}")
+    # Lanzamos el error si lo que se ingresó no es un número
+    except ValueError as e:
+        print(f"Error: {e}")
+    
+    salida = input("Ingresa cualquier valor para continuar, 0 para cerrar: ")
+    if (salida == "0"):
+        break
+print("----------FIN DEL PROGRAMA----------")
